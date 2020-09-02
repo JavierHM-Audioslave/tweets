@@ -53,7 +53,10 @@ function crearLiAYAdjuntar (tweet){
         eliminarTweet.classList.add("eliminarUnTweet");
         eliminarTweet.innerHTML = "X";
         eliminarTweet.setAttribute("href", "#");
-        eliminarTweet.onclick = borrarTweet; // Si voy a usar la función que está comentada 15 líneas más abajo, este línea simplemente la tengo que comentar. //
+        eliminarTweet.onclick = function() {    // Si voy a usar la función que está comentada 15 líneas más abajo, este línea simplemente la tengo que comentar. //
+            borrarTweet;    // El/los parámetros van en esta función, no en la anónima de arriba. //
+        }
+        // Si bien hubiese podido dejar eliminarTweet.onclick = borrarTweet, no lo hago porque si en algún momento la función necesitase enviar algún parámetro, ya ahí la llamada a la función se haría apenas se lee esta línea (y no cuando se hace click sobre el elemento que es lo que quiero) dado que el navegador al leer esta línea automáticamente manda a ejecutar la función. Para soluciona ésto y como buena práctica, SIEMPRE (sea que la función envía o no parámetros) hacerlo como la línea de arriba. //
 
         let liNuevo = document.createElement("li");
         liNuevo.classList.add("liConTweet");
