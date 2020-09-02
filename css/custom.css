@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5vw 10vw 0 10vw;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* @media (max-width: 600px) {
+    body {
+        margin: 5vw 0 0 0;
+    }
+} */
+
+header h1{
+    /* order: 1;
+    flex: 1 1 auto; */
+    text-align: center;
+    font-size: 6.5vw;
+    
+    font-weight: 400; /* Sirve para definir el peso de la fuente. */
+    letter-spacing: -.1vw;  /* Sirve para definir el espaciado entre letras */
+    /* background-color: pink; */
+    margin-bottom: 2.5vw;
+}
+
+/* @media (max-width: 600px) {
+    header h1 {
+        font-size: 15vw;
+        margin-bottom: 13vw;
+    }
+} */
+
+#contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 3vw;
+}
+
+/* @media (max-width: 600px) {
+    #contenedor {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+} */
+
+#ladoIzquierdo {
+    order: 1;
+    flex: 1 1 800px;
+    /* border: 1px solid red; */
+    padding-right: 3vw;
+}
+
+/* @media (max-width: 600px) {
+    #ladoIzquierdo {
+        flex: 1 2 auto;
+        width: 75%;
+        margin-bottom: 15vw;
+    }
+} */
+
+#cambiaFuente {
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+/* @media (max-width: 600px) {
+    #cambiaFuente {
+        font-size: 4.5vw;
+    }
+} */
+
+#textAreaConTweet {
+    width: 100%;
+    font-size: 2vw;
+    border: .2vw solid lightblue;
+    padding: 1vw;
+    box-sizing: border-box;
+    margin-top: .5vw;
+    border-radius: 1vw;
+    overflow-wrap: break-word;
+}
+
+/* @media (max-width: 600px) {
+    #textAreaConTweet {
+        font-size: 5vw;
+    }
+} */
+
+#botonSubmit {
+    margin-top: 2vw;
+    width: 100%;
+    padding: .5vw 0;
+    background-color: #1EAEDB;
+    color: white;
+    font-size: 1.5vw;
+}
+
+/* @media (max-width: 600px) {
+    #botonSubmit {
+        font-size: 4vw;
+    }
+} */
+
+#ladoDerecho {
+    order: 2;
+    flex: 1.5 1 800px;
+    /* border: 1px solid blue; */
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    flex-wrap: break-word;
+}
+
+/* @media (max-width: 600px) {
+    #ladoDerecho {
+        flex: 2 1 auto;
+        font-size: 6vw;
+        width: 75%;
+    }
+} */
+
+#tablaHistoricoDeTweets {
+    margin: 2vw 2vw;
+    list-style-type: none;
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+/* @media (max-width: 600px) {
+    #tablaHistoricoDeTweets {
+        font-size: 4vw;
+    }
+} */
+
+.liConTweet {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: .7vw 2vw 0 2vw;
+}
+
+/* @media (max-width: 600px) {
+    .liConTweet {
+        justify-content: space-between;
+        align-items: center;
+    }
+} */
+
+#historicoDeTweet {
+    order: 1;
+    flex: 2 1 450px;
+    text-align: left;
+    /* border: 2px solid green; */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* @media (max-width: 600px) {
+    #historicoDeTweet {
+        flex: 2 1 100px;
+    }
+} */
+
+.eliminarUnTweet {
+    order: 2;
+    flex: 1 2 150px;
+    text-align: center;
+    /* border: 2px solid blue; */
+    text-decoration: none;
+    margin: .1vw .5vw;
+    font-size: 1.2vw;
+}
+
+/* @media (max-width: 600px) {
+    .eliminarUnTweet {
+        flex: 1 1 25px;
+        font-size: 3.5vw;
+        margin-top: .4vw;
+    }
+} */
+
+.eliminarUnTweet a {
+    background-color: yellow;
+    color: white;
+    display: block;
+}

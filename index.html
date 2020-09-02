@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweets</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="css/customForMobile.css">
+</head>
+<body>
+    <header>
+        <h1>Local Storage</h1>
+    </header>
+    <div id="contenedor">
+        <div id="ladoIzquierdo">
+            <form action="#">
+                <label for="textAreaConTweet" id="cambiaFuente">Tweet:</label>
+                <textarea name="tweet" id="textAreaConTweet" rows="5"></textarea>
+                <br>
+                <input type="submit" id="botonSubmit" value="AGREGAR">
+            </form>
+        </div>
+        <div id="ladoDerecho">
+           <p>Mis tweets</p>
+            <ul id="tablaHistoricoDeTweets">
+            </ul>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

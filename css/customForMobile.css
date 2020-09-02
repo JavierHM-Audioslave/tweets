@@ -1,0 +1,57 @@
+body {
+    margin: 5vw 0 0 0;
+}
+
+header h1 {
+    font-size: 15vw;
+    margin-bottom: 13vw;
+}
+
+#contenedor {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ladoIzquierdo {
+    flex: 1 2 auto;
+    width: 75%;
+    margin-bottom: 15vw;
+}
+
+#cambiaFuente {
+    font-size: 4.5vw;
+}
+
+#textAreaConTweet {
+    font-size: 5vw;
+}
+
+#botonSubmit {
+    font-size: 4vw;
+}
+
+#ladoDerecho {
+    flex: 2 1 auto;
+    font-size: 6vw;
+    width: 75%;
+}
+
+#tablaHistoricoDeTweets {
+    font-size: 4vw;
+}
+
+.liConTweet {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#historicoDeTweet {
+    flex: 2 1 100px;
+}
+
+.eliminarUnTweet {
+    flex: 1 1 25px;
+    font-size: 3.5vw;
+    margin-top: .4vw;
+}
